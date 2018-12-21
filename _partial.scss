@@ -1,0 +1,26 @@
+$headerbkcolor: black;
+$bodybkcolor:  linear-gradient(  #ecf2f9,#ffe6ff);
+$wrappercolor:white;
+$navbgcolor: lightcyan;
+$navmenucolor: red;
+$desktop: 840px;
+
+$maincolor: #eee;
+$fontsize: 16px;
+
+//media queries
+$tablet: 55em;
+$mobile : 25em;
+
+@mixin tablet {
+    @media(max-width: #{$tablet})
+    {
+        @content;
+    }
+    }
+@mixin mobile {
+        @media(max-width: #{$mobile})
+        {
+            @content;
+        }
+        }
